@@ -1,0 +1,183 @@
+body{
+background:#f6eee6;
+font-family:'Poppins', sans-serif;
+margin:0;
+padding:0;
+}
+
+.revista{
+width:90%;
+max-width:1000px;
+margin:auto;
+background:#f6eee6;
+paddind:60px 80px;
+box-shadow:0 0 20px rgba(0,0,0,0.1);
+margin-top:30px;
+}
+
+h1{
+font-family:'Playfair Display', serif;
+font-size:48px;
+color:#6d4c41;
+text-align:center;
+}
+
+.subtitulo{
+text-align:center;
+color:#a1887f;
+}
+
+.pagina{
+display:flex;
+gap:30px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.texto{
+flex:1;
+font-size:18px;
+line-height:1.6;
+margin-left:40px;
+margin-right:40px;
+max-width:500px;
+}
+
+.imagen img{
+width:100%;
+max-width:420px;
+height:auto;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+.frase{
+margin:40px 0;
+padding:20px;
+background:#f3e5d8;
+border-left:5px solid #d4a373;
+font-style:italic;
+font-size:20px;
+}
+
+.galeria{
+display:flex;
+gap:20px;
+justify-content:center;
+margin-top:30px;
+}
+
+/* estilo polaroid */
+
+.polaroid{
+background:white;
+padding:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+width:200px;
+text-aling:center;
+transform:rotate(-2deg);
+transition;0.3s;
+}
+
+.polaroid:nth-child(2){
+transform:rotate(2deg);
+}
+
+.polaroid img{
+width:100%;
+}
+
+.polaroid:hover{
+transform:scale(1.05);
+}
+
+/* botones */
+
+button{
+background:#d4a373;
+color:white;
+border:none;
+padding:12px 20px;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#b08968;
+}
+
+.boton-link{
+display:inline-block;
+background:#d4a373;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:5px;
+}
+
+.boton-link:hover{
+background:#b08968;
+}
+
+button:hover,
+.boton-link:hover{
+background:#b08968;
+transform:translateY(-4px);
+box-shadow:0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* animación pasar página */
+
+.pagina-animada{
+animation:pasarPagina 0.6s ease;
+}
+
+@keyframes pasarPagina{
+from{
+opacity:0;
+transform:translateX(80px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+.imagen{
+flex:1;
+display:flex;
+justify-content:center;
+padding-right:40px;
+}
+
+
+.titulo-revista{
+text-align:center;
+line-height:1.1;
+margin-bottom:10px;
+}
+
+.quien{
+display:block;
+font-size:60px;
+font-family:'Playfair Display', serif;
+color:#6d4c41;
+}
+
+.eres{
+display:block;
+font-size:50px;
+font.family:'Great Vibes', cursive;
+color:#b08968;
+margin-top:5px;
+}
+
+.para{
+display:block;
+font-size:75px;
+font-family:'Playfair Display', serif;
+color:#6d4c41;
+margin-top:5px;
+}
